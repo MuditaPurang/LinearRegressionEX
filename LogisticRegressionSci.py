@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Ungraded Lab:  Logistic Regression using Scikit-Learn
-# 
-# 
+# # Logistic Regression using Scikit-Learn
 # 
 
 # ## Goals
-# In this lab you will:
+# 
 # -  Train a logistic regression model using scikit-learn.
 # 
 
@@ -27,7 +25,6 @@ y = np.array([0, 0, 0, 1, 1, 1])
 # 
 # The code below imports the [logistic regression model](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression) from scikit-learn. You can fit this model on the training data by calling `fit` function.
 
-# In[2]:
 
 
 from sklearn.linear_model import LogisticRegression
@@ -49,7 +46,8 @@ print("Prediction on training set:", y_pred)
 
 # ## Calculate accuracy
 # 
-# You can calculate this accuracy of this model by calling the `score` function.
+# You can calculate the accuracy of this model by calling the `score` function.
+
 
 
 print("Accuracy on training set:", lr_model.score(X, y))
